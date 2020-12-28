@@ -19,7 +19,7 @@ function startGame(){
     Q2();
     Q3();
     Q4();
-    // Q5();
+    Q5();
     // console.log(point);
     alert(`${person} You have got ${point}/5`)
     document.getElementById('points').textContent = `${person} You have got ${point}/5`;
@@ -65,12 +65,12 @@ function Q4(){
     }
 };
 
-// function Q5(){
-//     var q5 = prompt("q3. Areej Joined the caurse because she want to learn more about web development, answer yes or no");
-//     if (q5 != null && (q5.toUpperCase() === "YES" || q5.toUpperCase() === "Y")) {
-//         point ++;
-//     }else if (q5 == null || q5 == "" || (q5.toUpperCase() != "NO" && q5.toUpperCase() != "N")) {
-//         alert('answer yes or no');
-//         Q5();
-//     }
-// };
+function Q5(){
+    var q5 = prompt("q3. Areej Joined the caurse because she want to learn more about web development, answer yes or no");
+    if (q5 != null && (q5.toUpperCase() === "YES" || q5.toUpperCase() === "Y")) {
+        point ++;
+    }else if (q5 == null || q5 == "" || (q5.toUpperCase() != "NO" && q5.toUpperCase() != "N")) {
+        alert('answer yes or no');
+        Q5();
+    }
+};
