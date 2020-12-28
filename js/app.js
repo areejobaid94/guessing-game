@@ -1,4 +1,4 @@
-var person ;
+var person;
 var point; 
 welcomeMess();
 function welcomeMess(){
