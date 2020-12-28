@@ -56,7 +56,7 @@ function Q3(){
 };
 
 function Q4(){
-    q4 = prompt("q1. Areej worked for 2 years as a developer, answer yes or no");
+    q4 = prompt("q4. Areej worked for 2 years as a developer, answer yes or no");
     if (q4 != null && (q4.toLocaleLowerCase() === "no" || q4.toLocaleLowerCase() === "n")) {
         point ++;
     }else if (q4 == null || q4 == "" || (q4.toLocaleLowerCase() != "yes" && q4.toLocaleLowerCase() != "y")) {
@@ -66,7 +66,7 @@ function Q4(){
 };
 
 function Q5(){
-    var q5 = prompt("q3. Areej Joined the caurse because she want to learn more about web development, answer yes or no");
+    var q5 = prompt("q5. Areej Joined the caurse because she want to learn more about web development, answer yes or no");
     if (q5 != null && (q5.toUpperCase() === "YES" || q5.toUpperCase() === "Y")) {
         point ++;
     }else if (q5 == null || q5 == "" || (q5.toUpperCase() != "NO" && q5.toUpperCase() != "N")) {
