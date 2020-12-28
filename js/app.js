@@ -1,3 +1,5 @@
+"use strict";
+
 var person;
 var point; 
 welcomeMess();
