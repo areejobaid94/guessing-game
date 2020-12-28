@@ -16,7 +16,7 @@ function startGame(){
     alert('answer yes or no');
     point = 0;
     Q1();
-    // Q2();
+    Q2();
     // Q3();
     // Q4();
     // Q5();
@@ -35,15 +35,15 @@ function Q1(){
     }
 };
 
-// function Q2(){
-//     var q2 = prompt("q2. Areej is a Civil engineer, answer yes or no");
-//     if (q2 != null && (q2.toUpperCase() === "YES" || q2.toUpperCase() === "Y")) {
-//         point ++;
-//     }else if (q2 == null || q2 == "" || (q2.toUpperCase() != "NO" && q2.toUpperCase() != "N")) {
-//         alert('answer yes or no');
-//         Q2();
-//     }
-// };
+function Q2(){
+    var q2 = prompt("q2. Areej is a Civil engineer, answer yes or no");
+    if (q2 != null && (q2.toUpperCase() === "YES" || q2.toUpperCase() === "Y")) {
+        point ++;
+    }else if (q2 == null || q2 == "" || (q2.toUpperCase() != "NO" && q2.toUpperCase() != "N")) {
+        alert('answer yes or no');
+        Q2();
+    }
+};
 
 // function Q3(){
 //     var q3 = prompt("q3. Areej worked as a windows developer, answer yes or no");
