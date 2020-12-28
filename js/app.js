@@ -4,8 +4,8 @@ welcomeMess();
 function welcomeMess(){
     person = prompt("Please enter your name");
     if (person != null && person != "") {
-        alert(`Welcome ${person}`);
-        document.getElementById('welcome').textContent = `Welcome ${person}`;
+        alert(`Welcome ${person} to`);
+        document.getElementById('welcome').textContent = `${person}  Welcome  to`.toLocaleUpperCase();
     }else{
         welcomeMess();
     }
