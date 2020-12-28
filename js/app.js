@@ -18,7 +18,7 @@ function startGame(){
     Q1();
     Q2();
     Q3();
-    // Q4();
+    Q4();
     // Q5();
     // console.log(point);
     alert(`${person} You have got ${point}/5`)
@@ -55,15 +55,15 @@ function Q3(){
     }
 };
 
-// function Q4(){
-//     q4 = prompt("q1. Areej worked for 2 years as a developer, answer yes or no");
-//     if (q4 != null && (q4.toLocaleLowerCase() === "no" || q4.toLocaleLowerCase() === "n")) {
-//         point ++;
-//     }else if (q4 == null || q4 == "" || (q4.toLocaleLowerCase() != "yes" && q4.toLocaleLowerCase() != "y")) {
-//         alert('answer yes or no');
-//         Q4();
-//     }
-// };
+function Q4(){
+    q4 = prompt("q1. Areej worked for 2 years as a developer, answer yes or no");
+    if (q4 != null && (q4.toLocaleLowerCase() === "no" || q4.toLocaleLowerCase() === "n")) {
+        point ++;
+    }else if (q4 == null || q4 == "" || (q4.toLocaleLowerCase() != "yes" && q4.toLocaleLowerCase() != "y")) {
+        alert('answer yes or no');
+        Q4();
+    }
+};
 
 // function Q5(){
 //     var q5 = prompt("q3. Areej Joined the caurse because she want to learn more about web development, answer yes or no");
