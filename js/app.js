@@ -17,7 +17,7 @@ function startGame(){
     point = 0;
     Q1();
     Q2();
-    // Q3();
+    Q3();
     // Q4();
     // Q5();
     // console.log(point);
@@ -45,15 +45,15 @@ function Q2(){
     }
 };
 
-// function Q3(){
-//     var q3 = prompt("q3. Areej worked as a windows developer, answer yes or no");
-//     if (q3 != null && (q3.toUpperCase() === "YES" || q3.toUpperCase() === "Y")) {
-//         point ++;
-//     }else if (q3 == null || q3 == "" || (q3.toUpperCase() != "NO" && q3.toUpperCase() != "N")) {
-//         alert('answer yes or no');
-//         Q3();
-//     }
-// };
+function Q3(){
+    var q3 = prompt("q3. Areej worked as a windows developer, answer yes or no");
+    if (q3 != null && (q3.toUpperCase() === "YES" || q3.toUpperCase() === "Y")) {
+        point ++;
+    }else if (q3 == null || q3 == "" || (q3.toUpperCase() != "NO" && q3.toUpperCase() != "N")) {
+        alert('answer yes or no');
+        Q3();
+    }
+};
 
 // function Q4(){
 //     q4 = prompt("q1. Areej worked for 2 years as a developer, answer yes or no");
