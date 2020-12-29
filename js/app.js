@@ -2,6 +2,7 @@
 
 var person;
 var point; 
+var iqPoints;
 welcomeMess();
 function welcomeMess(){
     person = prompt("Please enter your name");
@@ -13,6 +14,7 @@ function welcomeMess(){
     }
 }
 
+//// about me que
 function startGame(){
     console.log("start")
     alert('answer yes or no');
@@ -51,6 +53,31 @@ function answerIsNo(qName, answer){
     }else if (answer == null || answer == "" || (answer.toLocaleLowerCase() != "yes" && answer.toLocaleLowerCase() != "y")) {
         alert('answer yes or no');
         qName();
+    }
+}
+
+////// IQ test
+function startGame(){
+    iqPoints = 0;
+    iQTestQue("complete the series => 4 - 7 - 12 - 15 - 20  - ...", 23 )
+    iQTestQue("complete the series => 2 - 0 - 4 - 0 - 8 - 0 - ...", 16 )
+    iQTestQue("complete the series => 18 - 10 - 6 - 4 - ...", 3 )
+    iQTestQue("complete the series => 1024 - 512 - 256 - 128 - ...", 64 )
+    iQTestQue("complete the series => 2 - 4 - 8 - 16 - ...", 32 )
+    iQTestQue("complete the series => 2 - 5 - 11 - ...", 29 )
+}
+
+function iQTestQue(str,correctAnswer){
+    let q = prompt(str);
+    let i = 0;
+    while(q != correctAnswer && i < 4){
+        alert(`wrong answer, you have ${3-i} attempts`)
+        q = prompt(str);
+        i ++
+    }
+    if(correctAnswer === q){
+        iqPoints ++
+        alert(`Good Job!, your points ${iqPoints}`)
     }
 }
 
