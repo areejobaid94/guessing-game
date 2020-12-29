@@ -7,30 +7,40 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li>
+                <ul class="nav">
+                    <li class ='nav-li' >
                         <a id = 'welcome' href="#home" style="color:lightseagreen ;margin-left:20px;"> 
                         </a>
                     </li>
-                    <li id = 'img'>
+                    <li id = 'img' class ='nav-li'>
                         <img style="width: 60px; height: 30px; margin-top: 10px;" src="https://www.headtorch.org/wp-content/uploads/2015/04/guessing-game-logo.png">
                     </li>
-                    <li>
+                    <li class ='nav-li'>
                         <a href="#about-me">
                         About Me
                         </a>
                     </li>
-                    <li>
+                    <li class ='nav-li'>
+                        <a href="#start-the-game">
+                            About Me Game
+                        </a>
+                    </li>
+                    <li class ='nav-li'>
+                        <a href="#about-me-level-2">
+                            About Me Level 2 Game
+                        </a>
+                    </li>
+                    <li class ='nav-li'>
                         <a href="#iq-test">
                             Check your IQ
                         </a>
                     </li>
-                    <li>
-                        <a href="#start-the-game">
-                            Start The Game
+                    <li class ='nav-li'>
+                        <a href="#top-ten">
+                            World's Best Places to Visit
                         </a>
                     </li>
-                    <li>
+                    <li class ='nav-li'>
                         <a href="#contact-us">
                         Contact Us
                         </a>
@@ -44,25 +54,52 @@
             </section >
             <section id = 'about-me'>
                 <h1 style="text-align: center;margin-top: 50px;">About Me</h1>
-                <h3 style="text-align: center; margin: 30px;margin-bottom: 70px;">
-                    My name is Areej Obaid and I am a Civil Engineer as will as a Software Engineer, I worked as a for full-stack Windows developer for a year and then I joined this caurse because I want to learn more about web development
-                </h3>
+                <ul style="margin: 30px;  display: table;margin: 0 auto;">
+                    <li><h3 >My name is Areej Obaid and I am a Civil Engineer as will as a Software Engineer</h3></li>
+                    <li><h3 >I worked as a full-stack Windows developer for a year</h3></li>
+                    <li><h3 >I joined this caurse because I want to learn more about web development</h3></li>
+                </ul>
             </section>
-            <section  style="text-align: center;" id = 'start-the-game'>
-                <h1>Start The Game</h1>
+            <section  style="text-align: center;margin-top: 70px;" id = 'start-the-game'>
+                <h1>Start About Me Game</h1>
                 <h3>If you finish reading about me, you can start the Game now:</h3>
                 <h4 id = 'points'></h4>
                 <button onclick="startGame()"  style="display: block;  margin-left: auto; margin-right: auto; margin-bottom: 90px; width: 20%;background-color: green;">
                     <h2>Start</h2>
                  </button>
             </section>
+            <section  style="text-align: center;margin-top: 70px;" id = 'about-me-level-2'>
+                <h1>About Me Level 2</h1>
+                <h3>Now we will play with different rules, try to guess the answer:</h3>
+                <h4 id = 'points-2'></h4>
+                <button onclick="startGameLevel2()"  style="display: block;  margin-left: auto; margin-right: auto; margin-bottom: 90px; width: 20%;background-color: green;">
+                    <h2>Start</h2>
+                </button>
+            </section>
             <section  style="text-align: center;" id = 'iq-test'>
                 <h1>Check your IQ</h1>
                 <img style="width: 50%;" src="https://www.verywellmind.com/thmb/ej--vvXaNxTiSVSgcKmNTFeCia0=/1500x844/smart/filters:no_upscale()/2795284-article-what-is-the-average-iq-5aa00dbc1d640400378bdacb.png" alt="">
                 <h3>Start the test if you are ready</h3>
+                <h4 id = 'points-iq'></h4>
                 <button onclick="startIQTest()"  style="display: block;  margin-left: auto; margin-right: auto; margin-bottom: 100px; width: 20%;background-color: green;">
                     <h2>Start</h2>
                  </button>
+            </section>
+            <section style="text-align: center;margin-bottom: 100px;"   id = 'top-ten'>
+                <h1>World's Best Places to Visit</h1>
+                <img style="width: 50%;" src="https://www.busytourist.com/wp-content/uploads/2019/06/Best-Places-To-Visit-In-The-World-696x364.jpg" alt="">
+                <ol style="margin: 40px;  display: table;margin: 0 auto;text-align: left;">
+                    <li><h3>South Island, New Zealand <a href="https://en.wikipedia.org/wiki/South_Island"> Read More</a></h3></li>
+                    <li><h3>Paris <a href="https://en.wikipedia.org/wiki/Paris"> Read More</a></h3></li>
+                    <li><h3>Bora Bora <a href="https://en.wikipedia.org/wiki/Bora_Bora"> Read More</a></h3></li>
+                    <li><h3>Glacier National Park <a href="https://stepsawayrentals.com/home/stepsaway-244-the-big-cabin/?gclid=CjwKCAiAxKv_BRBdEiwAyd40N6qxwS0tPYg_fo9t0kDeUxnPHzTgPideFgGm15AOPR3VoWPeciO_2RoC8NEQAvD_BwE">Read More</a></h3></li>
+                    <li><h3>London <a href="https://en.wikipedia.org/wiki/London"> Read More</a></h3></li>
+                    <li><h3>Maui <a href="https://en.wikipedia.org/wiki/Maui"> Read More</a></h3></li>
+                    <li><h3>Tahiti <a href="https://en.wikipedia.org/wiki/Tahiti"> Read More</a></h3></li>
+                    <li><h3>Tokyo <a href="https://en.wikipedia.org/wiki/Tokyo"> Read More</a></h3></li>
+                    <li><h3>Rome <a href="https://en.wikipedia.org/wiki/Rome"> Read More</a></h3></li>
+                    <li><h3>Phuket <a href="https://en.wikipedia.org/wiki/Phuket_Province"> Read More</a></h3></li>
+                </ol>
             </section>
             <script src = "js/app.js">
 
