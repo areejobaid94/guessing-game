@@ -6,7 +6,7 @@ welcomeMess();
 function welcomeMess(){
     person = prompt("Please enter your name");
     if (person != null && person != "") {
-        alert(`Welcome ${person} to`);
+        alert(`Welcome ${person} to The Guessing Game`);
         document.getElementById('welcome').textContent = `${person}  Welcome  to`.toLocaleUpperCase();
     }else{
         welcomeMess();
