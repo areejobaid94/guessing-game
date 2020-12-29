@@ -57,7 +57,7 @@ function answerIsNo(qName, answer){
 }
 
 ////// IQ test
-function startGame(){
+function startIQTest(){
     iqPoints = 0;
     iQTestQue("complete the series => 4 - 7 - 12 - 15 - 20  - ...", 23 )
     iQTestQue("complete the series => 2 - 0 - 4 - 0 - 8 - 0 - ...", 16 )
@@ -65,6 +65,7 @@ function startGame(){
     iQTestQue("complete the series => 1024 - 512 - 256 - 128 - ...", 64 )
     iQTestQue("complete the series => 2 - 4 - 8 - 16 - ...", 32 )
     iQTestQue("complete the series => 2 - 5 - 11 - ...", 29 )
+    console.log(iqPoints);
 }
 
 function iQTestQue(str,correctAnswer){
@@ -75,7 +76,7 @@ function iQTestQue(str,correctAnswer){
         q = prompt(str);
         i ++
     }
-    if(correctAnswer === q){
+    if(correctAnswer == q){
         iqPoints ++
         alert(`Good Job!, your points ${iqPoints}`)
     }

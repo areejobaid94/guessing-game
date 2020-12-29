@@ -29,7 +29,7 @@ nav {
    }
    #img {
        margin-left: 5px;
-       margin-right: 600px;
+       margin-right: 500px;
    }
    
    li a {
@@ -92,7 +92,4 @@ nav {
        background-color: black;
        text-align: center;
        color: wheat;
-     }
-     #user-account{
-       display: none;
      }
