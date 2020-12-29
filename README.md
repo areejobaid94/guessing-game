@@ -10,3 +10,9 @@
 2. [Lab: 02 - About Me, with a guessing game](https://canvas.instructure.com/courses/2471935/assignments/19163466).
 
 ## Reflections and Comments:
+
+### In lab-03 I used .includes() and .join()
+
+#### read about .includes(): [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
+#### read about .join(): [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
