@@ -59,7 +59,7 @@ function answerIsNo(qName, answer) {
 function startIQTest() {
     point = 0;
     let queArr = ["complete the series => 4 - 7 - 12 - 15 - 20  - ...", "complete the series => 2 - 0 - 4 - 0 - 8 - 0 - ...", "complete the series => 18 - 10 - 6 - 4 - ...", "complete the series => 1024 - 512 - 256 - 128 - ...", "complete the series => 2 - 4 - 8 - 16 - ...", "complete the series => 2 - 5 - 11 - ..."]
-    let ansArr = [23, 16, 3, 64, 32, 29]
+    let ansArr = [23, 16, 3, 64, 32, 20];
     for (var i = 0; i < queArr.length; i++) {
         testQue(queArr[i], ansArr[i]);
     }
