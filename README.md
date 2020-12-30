@@ -20,6 +20,8 @@
 
 **Navigator**: Areej
 **Driver**: Omar
+
 - Modify the StartGame Function
 - Modify the StartIQTest
+- Modify Global Variable
 
