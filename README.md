@@ -24,4 +24,5 @@
 - Modify the StartGame Function
 - Modify the StartIQTest
 - Modify Global Variable
-
+- Modify the indentation and semicolon at some part of the code
+-The function instruction are all done

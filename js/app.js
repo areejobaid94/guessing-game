@@ -19,12 +19,12 @@ function beginTheGame() {
     alert('answer yes or no');
     score = 0;
     let queArr = ["q1. Areej's family name is Abbad, answer yes or no", "q2. Areej is a Civil engineer, answer yes or no", "q3. Areej worked as a windows developer, answer yes or no", "q4. Areej worked for 2 years as a developer, answer yes or no", "q5. Areej Joined the caurse because she want to learn more about web development, answer yes or no"]
-    let ansArr = ['No', 'Yes', 'Yes', 'No', 'Yes']
+    let ansArr = ['No', 'Yes', 'Yes', 'No', 'Yes'];
     for (var i = 0; i < queArr.length; i++) {
         que(queArr[i], ansArr[i]);
     }
     console.log(score);
-    alert(`${person} You have got ${score}/5`)
+    alert(`${person} You have got ${score}/5`);
     document.getElementById('points').textContent = `${person} You have got ${score}/5`;
 }
 
@@ -63,7 +63,7 @@ function startIQTest() {
     for (var i = 0; i < queArr.length; i++) {
         testQue(queArr[i], ansArr[i]);
     }
-    alert(`${person} You have got ${score}/6`)
+    alert(`${person} You have got ${score}/6`);
     document.getElementById('points-iq').textContent = `${person} You have got ${score}/6`;
     console.log(score);
 }
@@ -74,10 +74,10 @@ function testQue(str, correctAnswer) {
     while (q != correctAnswer && i < 3) {
         alert(`wrong answer, you have ${3 - i} attempts`)
         q = prompt(str);
-        i++
+        i++;
     }
     if (correctAnswer == q) {
-        score++
+        score++;
         alert(`${person}, Good Job!, your points ${score}`)
     } else {
         alert(`${person}, The correct answer is ${correctAnswer}`)
@@ -91,19 +91,19 @@ function MultCorrectAnsQue(str, correctAnswer) {
     while (correctAnswer.includes(q.toLocaleLowerCase()) === false && i < 5) {
         alert(`wrong answer, you have ${5 - i} attempts`);
         q = prompt(str);
-        i++
+        i++;
     }
     if (correctAnswer.includes(q.toLocaleLowerCase())) {
         score++
-        alert(`${person}, Good Job!, I love ${correctAnswer.join(' + ')} => your points ${score}`)
+        alert(`${person}, Good Job!, I love ${correctAnswer.join(' + ')} => your points ${score}`);
     } else {
-        alert(`${person}, The correct answer is ${correctAnswer.join(' + ')} `)
+        alert(`${person}, The correct answer is ${correctAnswer.join(' + ')} `);
     }
 }
 
 /// Level2
 function startGameLevel2() {
-    console.log('hi')
+    console.log('hi');
     score = 0;
     let queArr = ["How many cats do I have", "How many brothers do I have", "How many sisters do I have", "How many years of experience in software engineering do I have", "How old am I", "How many languages I can speech"]
     let ansArr = [1, 1, 3, 1, 26, 2]
