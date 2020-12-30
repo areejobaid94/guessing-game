@@ -16,3 +16,13 @@
 #### read about .includes(): [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
 #### read about .join(): [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+
+**Navigator**: Areej
+**Driver**: Omar
+
+- Modify the StartGame Function
+- Modify the StartIQTest
+- Modify Global Variable
+- Modify the indentation and semicolon at some part of the code
+-The function instruction are all done
